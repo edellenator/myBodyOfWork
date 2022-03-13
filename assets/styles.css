@@ -36,6 +36,7 @@ header {
     position: -webkit-sticky;
     position: sticky;
     border-bottom: 3px solid var(--highlight-color);
+    z-index: 9999;
 }
 header h1 {
     font-weight: bold;
@@ -44,7 +45,7 @@ header h1 {
 }
 header a {
     text-decoration: none;
-    color: bisque;
+    color: var(--highlight-color);
 }
 header nav {
     align-content: center;
@@ -77,27 +78,6 @@ header nav ul li {
     width: 100%;
     height: 100vh;
 }
-.hero ul {
-    margin-top: -50px;
-    display: flex;
-    list-style: none;
-    width: 15%;
-    flex-wrap: wrap-reverse;
-}
-.hero a {
-    text-decoration: none;
-    color: var(--emphasis-text-color);
-}
-.hero ul li {
-    font-size: 25px;
-    color: var(--emphasis-text-color);
-    padding: 10px;
-    align-items: center;
-}
-.hero ul li a img {
-    margin: 5px;
-    width: 20px;
-}
 
 /* bio section start */
 
@@ -115,7 +95,7 @@ header nav ul li {
     padding: 40px;
     justify-content: center;
     align-content: flex-start;
-
+    
 }
 .about-me ul {
     font-size: 40px;
@@ -152,11 +132,111 @@ header nav ul li {
     
 }
 .folio-images {
+    justify-content: space-between;
+    display: flex;
     padding: 30px;
+    flex-wrap: wrap;
+}
+.folio-image {
+    width: 40%;
+    background-color: var(--secondary-color);
+    color: var(--normal-text-color);
+    text-align: center;
+    margin: 15px;
+}
+.folio-image img {
+    width: 100%;
+}
+.folio-image a {
+    text-decoration: none;
+    color: var(--normal-text-color);
+}
+.folio-image h2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .belt {
     margin-top: -31px;
+    z-index: 9998;
 }
 .belt img {
     width: 100%;
+}
+.work-sect2 {
+    background-image: url(./images/section-two-bg.gif);
+    background-size: cover;
+    background-position: center;
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    margin-top: -18px;
+}
+.folio-image:first-child {
+    width: 100%;
+}
+.folio-image:not(:first-child) {
+    flex: 1;
+}
+
+/* contact section begin */
+.contact-section {
+    background-image: url(./images/folio-footer.png);
+    background-position: center;
+    background-color: var(--normal-text-color);
+    background-size: 100%;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+}
+.contact-section h2 {
+    width: 70%;
+    text-align: center;
+    color: var(--menu-color);
+    font-size: 40px;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid var(--emphasis-text-color);
+    
+}
+.contact-info {
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.myinfo {
+    width: 45%;
+    text-align: center;
+    color: var(--menu-color);
+
+}
+.myinfo ul {
+    margin-top: -50px;
+    display: flex;
+    list-style: none;
+    width: 15%;
+    flex-wrap: wrap-reverse;
+}
+.myinfo a {
+    text-decoration: none;
+    color: var(--menu-color);
+    width: 100%;
+}
+.smlinks {
+    display: flex;
+    font-size: 25px;;
+    padding: 10px;
+    font-weight: bold;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.smlinks img {
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 20px;
 }
