@@ -68,14 +68,13 @@ header nav ul li {
 .hero {
     display: flex;
     background-size: cover;
-    background-position: 57%;
-    background-image: url(./images/hero.png);
     background-color: var(--normal-text-color);
     top: 0%;
-    justify-content: left;
-    flex-wrap: wrap;
-    align-content: flex-end;
     width: 100%;
+    justify-content: center;
+    overflow: hidden;
+}
+.hero img {
     height: 100vh;
 }
 
@@ -84,10 +83,11 @@ header nav ul li {
 .about-me {
     padding: 0px 20px 20px 20px;
     background-color: var(--menu-color);
+    height: 100vh;
 }
 .about-me article {
     top: 0%;
-    height: fit-content;
+    height: 100vh;
     background-color: var(--background-color);
     border-radius: 100px;
     display: flex;
@@ -95,6 +95,7 @@ header nav ul li {
     padding: 40px;
     justify-content: center;
     align-content: flex-start;
+    flex-wrap: wrap;
     
 }
 .about-me ul {
@@ -107,6 +108,12 @@ header nav ul li {
 }
 .about-me ul li {
     padding: 0 15px 30px 15px;
+}
+.about-me h2{
+    width: 100%;
+    padding: 15px;
+    font-size: 75px;
+    color: var(--menu-color);
 }
 .about-me p {
     text-align: left;
@@ -138,8 +145,7 @@ header nav ul li {
     flex-wrap: wrap;
 }
 .folio-image {
-    width: 40%;
-    background-color: var(--secondary-color);
+    width: 100%;
     color: var(--normal-text-color);
     text-align: center;
     margin: 15px;
@@ -154,6 +160,12 @@ header nav ul li {
 .folio-image h2 {
     padding-top: 10px;
     padding-bottom: 10px;
+    position: relative;
+    top: -50%;
+    left: 0px;
+    width: 200px;
+    height: 25%;
+    background-color: var(--secondary-color);
 }
 .belt {
     margin-top: -31px;
@@ -171,7 +183,7 @@ header nav ul li {
     flex-wrap: wrap;
     width: 100%;
     justify-content: center;
-    margin-top: -18px;
+    margin-top: -25px;
 }
 .folio-image:first-child {
     width: 100%;
