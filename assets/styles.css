@@ -307,9 +307,12 @@ header a:hover {
     .hero {
         position:relative
     }
+    .about-me {
+        height: auto;
+    }
     .about-me article{
         position:relative;
-        overflow: hidden;
+        height:auto;
     }
     .about-me ul {
         width: 100%;
