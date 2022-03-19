@@ -297,7 +297,7 @@ header a:hover {
         opacity: 1;
     }
     .folio-image:not(:first-child) {
-        flex: 1 0 auto
+        flex: 1 1 auto
     }
 }
 
