@@ -111,7 +111,7 @@ header a:hover {
     font-size: 40px;
     color: var(--emphasis-text-color);
     list-style: none;
-    text-align: right;
+    text-align: center;
     font-weight: bold;
     padding: 0 30px;
     display: flex;
@@ -274,4 +274,57 @@ header a:hover {
     margin-right: 10px;
     margin-left: 10px;
     width: 45px;
+}
+
+/* MEDIA QUERIES START */
+
+/* MEDIA QUERIES FOR SMALLER SCREENS */
+@media screen and (max-width: 980px) {
+    .header {
+        position:fixed;
+        position: relative;
+    }
+    .hero {
+        justify-content: flex-end;
+    }
+    .about-me article ul li {
+        font-size: 30px;
+    }
+}
+
+/* MEDIA QUERIES FOR TABLETS AND SMALLER */
+
+@media screen and (max-width: 768px) {
+    .hero {
+        position:relative
+    }
+    .hero img {
+        position:relative;
+        left: 60px;
+    }
+    .about-me article{
+        position:relative;
+        overflow: hidden;
+    }
+    .about-me ul {
+        width: 50%;
+        text-align: right;
+        flex-direction: column;
+        padding-right: 10px;
+        padding-top: 4px
+    } 
+    .about-me p {
+        width: 50%;
+        border-top: none;
+        border-left: 3px solid var(--highlight-color);
+        padding-left: 14px;
+        padding-top: 0;
+    }
+    .about-me img{
+        width: 200px;
+        position:absolute;
+        left: 24%;
+        top:55%;
+        margin-top:0;
+    }
 }
